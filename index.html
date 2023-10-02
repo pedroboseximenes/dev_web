@@ -7,37 +7,32 @@
    <link href="assets/css/bootstrap.css" rel="stylesheet">
    <link href="assets/css/all.css" rel="stylesheet">
    <link href="assets/css/styles.css" rel="stylesheet">
-   <title>Bootstrap</title>
+   <title>FlyTrip</title>
+   <link rel="icon" type="image/x-icon" href="/assets/images/travel.png">
 </head>
 
 <body>
    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
       <div class="container">
-         <a class="navbar-brand" href="#"><img src="assets/images/Rio-Turismo.png" style="width: 100px;"
-               alt="Rio Turismo"></a>
+         <a class="navbar-brand" href="#">
+            
+            <img src="assets/images/wepik-linear-modern-plane-fly-trip-logo-202310020118316pLd.png" style="width: 100px;"
+               alt="Rio Turismo"></a> 
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
             aria-expanded="false" aria-label="Botão de navegação">
             <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="menu">
             <div class="navbar-nav mr-auto ">
-               <a class="nav-link nav-item" href="#passeios">Passeios</a>
-               <a class="nav-link nav-item" href="#excursoes">Excursões</a>
+               <a class="nav-link nav-item" href="#passagens">Passagens Aéreas</a>
+               <a class="nav-link nav-item" href="pacotes.html">Pacotes</a>
 
-               <div class="dropdown">
-               <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">Passeios Culturais</a>
-               <div class="dropdown-menu">
-                  <a class="dropdown-item">Museus</a>
-                  <a class="dropdown-item">Feiras</a>
-                  <a class="dropdown-item">Bibliotecas</a>
-                  <a class="dropdown-item">Livrarias</a>
-               </div>
-               </div>
-
-               <a class="nav-link nav-item" href="#">Reservas</a>
+         
+               
                <a class="nav-link nav-item" href="#header">Contato</a>
             </div>
             <div class="navbar-nav">
+               <a class="nav-link nav-item" href="#ajuda">Ajuda</a>
                <a class="nav-link nav-item" href="#pedidos">Meus Pedidos</a>
                <a class="nav-link nav-item" href="#janelamodal">
                   <i class="fa-solid fa-right-to-bracket"></i> Entrar </a>
@@ -45,8 +40,9 @@
          </div>
       </div>
    </nav>
-
+   <br><br><br>
    <!-- <div class="bgimage d-none d-md-block mb-4" style="margin-top:69px;"></div> -->
+   <div class="container">
    <div id="carousel-id" class="carousel slide  carousel-fade d-none d-md-block mb-4" style="margin-top: 69px;" data-ride="carousel" data-interval="3000">
       <ol class="carousel-indicators">
          <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
@@ -57,8 +53,8 @@
             <img src="assets/images/panoramica1.jpg" class="d-block w-100" style="height: 350px;">
             <div class="carousel-caption" style="top: 70px;">
                <div class="text-center">
-                  <span class="text-1">Os melhores Passeios e Excursões no Rio de Janeiro</span><br>
-                  <span class="text-2">Faça sua reserva agora!</span><br>
+                  <span class="text-1">Voos para todo o Brasil</span><br><br><br>
+                  <a class="text-3 btn btn-light" href="#passagens">Compre agora</a>
                </div>
             </div>
          </div>
@@ -67,7 +63,8 @@
             <img src="assets/images/panoramica2.jpg" class="d-block w-100" style="height: 350px;">
           <div class="carousel-caption" style="top: 70px;">
                <div class="text-center">
-                  <span class="text-1">Aceitamos Pix, Crédito, Dinheiro!</span><br>
+                  <span class="text-1">Pacotes completos para não se preocupar!</span><br><br><br>
+                  <a class="text-3 btn btn-light" href="pacotes.html">Compre agora</a>
                  
                </div>
             </div>
@@ -78,6 +75,7 @@
 
 
       </div>
+      
       <a href="#carousel-id" class="carousel-control-prev" data-slide="prev" role="button">
          <span aria-hidden="true" class="carousel-control-prev-icon">
             <span class="sr-only">Anterior</span>
@@ -92,221 +90,202 @@
 
 
    </div>
+</div>
 
 
    <div class="container">
    <div class="jumbotron d-block d-md-none text-center" style="margin-top: 89px;">
-      <h4>Empresa focada em passeios turisticos pela cidade do Rio de Janeiro </h4>
+      <h4>Empresa focada em passagens aéreas por todo o território brasileiro </h4>
       <br>
-      <h4>Veja abaixo os possiveis passeios mais solicitados pelos nossos clientes</h4>
+      <h4>Veja abaixo os possiveis voos com um preço bem camarada</h4>
    </div>
 
+   <br>
 
-   <h4 id="passeios" class="mb-3">Nossos Passeios</h4>
+   <!--Colocar Saida e destino-->
+   <div class="container  mb-3">
+      <div class="text-center bg-light p-2 m-auto">
+      <p class="text-sm font-weight-lighter mt-auto m-2">De onde você está saindo ?</p>
+      <select class="form-select custom-select-lg mb-5" style="width: 500px;">
+         <option selected>Busque por aeroporto:</option>
+         <option value="1">Rio de Janeiro - Santos Dumont (SDU)</option>
+         <option value="2">São Paulo - Congonhas (CGH)</option>
+       </select><br>
+       <a class="btn btn-info text-uppercase btn-md" href="listagem_passagens.html">Buscar VOO</a>
+      </div>
+      
+    
+   </div>
+
+   <h4 id="passagens" class="mb-3">Nossos Voos</h4>
    <div class="row mb-4">
-      <div class="col-lg-4 col-md-6">
-         <div class="card mb-3">
-            <img src="assets/images/p-ciclovia.jpg" alt="Ciclovias">
-            <div class="card-body">
-               <div class="text-center">
-                  <h5 class="card-title">Ciclovias da Cidade</h5>
-   
-                  <p class="text-warning font-weight-bold">Passeio diário</p>
-               </div>
-               <p class="card-text text-justify">O Rio possui uma extensa malha de ciclovias. As principais vias começam
-                  na Marina da Glória, próxima ao centro da Cidade, passando por toda a
-                  Zona Sul até o Leblon.</p>
-            </div>
-            <div class="card-footer text-right">
-               <button class="btn btn-outline-info">Mais Informações..</button>
-               </div>
-         </div>
-      </div>
-   
-      <div class="col-lg-4 col-md-6">
-         <div class="card mb-3">
-            <img src="assets/images/p-copacabana.jpg" alt="Copacabana">
-            <div class="card-body">
-               <div class="text-center">
-                  <h5 class="card-title">Praia de Copacabana</h5>
-   
-                  <p class="text-info font-weight-bold">Passeio terças e quintas</p>
-               </div>
-               <p class="card-text text-justify">Copacabana que é também conhecida como 
-                  <a href="#"
-                  data-trigger="hover"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  data-html="true"
-                  title="Tom Jobim">      "Princesinha do Mar"</a>
+      <div class="col-lg-4 col-md-6 d-flex">
+         <div class="card mb-4">
             
+            <img class="card-img" src="assets/images/bonito_img.jpg" altr="Teste">
+            <div class="card-img-overlay">
+              
+               <div class="text-center">
+                  <h5 class="card-body text-2 text-white">Bonito</h5>
+   
+                  <p class="text-white text-uppercase font-weight-bold">A partir de</p>
+                  <p class="text-white text-uppercase font-weight-bold text-2">R$ 450</p>
+               </div>
+   
+            </div>
+   
+            <div class="card-footer text-center">
+               <button class="btn btn-outline-info text-uppercase ">Ver mais</button>
+            </div>
+   
+         </div>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 d-flex">
+         <div class="card mb-4">
+            <img class="card-img" src="assets/images/manaus_img.jpg" altr="Teste">
+            <div class="card-img-overlay">
+               <div class="text-center">
+                  <h5 class="card-body text-2 text-white">Manaus</h5>
+   
+                  <p class="text-white text-uppercase font-weight-bold">A partir de</p>
+                  <p class="text-white text-uppercase font-weight-bold text-2">R$ 450</p>
+               </div>
+   
+            </div>
+            <div class="card-footer text-center">
+               <button class="btn btn-outline-info text-uppercase ">Ver mais</button>
+            </div>
+         </div>
+   
+      </div>
+   
+      <div class="col-lg-4 col-md-6 d-flex">
+         <div class="card mb-4">
+            <img class="card-img" src="assets/images/saopaulo_img.jpg" altr="Teste">
+            <div class="card-img-overlay">
+               <span class="badge badge-success">mais barato</span>
 
-                  em função de uma famosa canção em sua homenagem, é um dos locais
-                  mais conhecidos do Brasil e do mundo.</p>
-            </div>
-            <div class="card-footer text-right">
-               <button class="btn btn-outline-info">Mais Informações..</button>
-               </div>
-         </div>
-   
-      </div>
-   
-      <div class="col-lg-4 col-md-6">
-         <div class="card mb-3">
-   
-   
-            <img src="assets/images/p-cristo-redentor.jpg" alt="Cristo Redentor">
-            <div class="card-body">
                <div class="text-center">
-                  <h5 class="card-title">Cristo Redentor</h5>
+                  
+                  <h5 class="card-body text-2 text-white">São Paulo</h5>
    
-                  <p class="text-info font-weight-bold">Passeio diário</p>
+                  <p class="text-white text-uppercase font-weight-bold">A partir de</p>
+                  <p class="text-white text-uppercase font-weight-bold text-2">R$ 190</p>
                </div>
-               <p class="card-text text-justify">Entre os principais pontos turísticos da cidade, estão o Corcovado, com a
-                  estátuado Cristo Redentor e o Pão de açucar. Ambos fornecem uma vista
-                  magnifíca da cidade.</p>
+   
             </div>
-            <div class="card-footer text-right">
-               <button class="btn btn-outline-info">Mais Informações..</button>
-               </div>
+            <div class="card-footer text-center">
+               <button class="btn btn-outline-info text-uppercase ">Ver mais</button>
+            </div>
          </div>
       </div>
    
    
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 d-flex">
          <div class="card mb-3">
-   
-   
-            <img src="assets/images/p-arcos-da-lapa.jpg" alt="Lapa">
-            <div class="card-body">
+            <img class="card-img" src="assets/images/salvador_img.jpg" altr="Teste">
+            <div class="card-img-overlay">
                <div class="text-center">
-                  <h5 class="card-title">Arcos da Lapa</h5>
+                  <h5 class="card-body text-2 text-white">Salvador</h5>
    
-                  <p class="text-info font-weight-bold">Passeio diário</p>
+                  <p class="text-white text-uppercase font-weight-bold">A partir de</p>
+                  <p class="text-white text-uppercase font-weight-bold text-2">R$ 450</p>
                </div>
-               <p class="card-text text-justify">A Lapa é dos locais noturnos mais conhecidos do Rio. É super democrático,
-                  rico
-                  em diversidade e abriga todas as tribos. Lá podemos encontrar bons restaurantes
-                  e bares, alguns com música ao vivo e muita concentração de jovens.</p>
+   
             </div>
-            <div class="card-footer text-right">
-               <button class="btn btn-outline-info">Mais Informações..</button>
-               </div>
+            <div class="card-footer text-center">
+               <button class="btn btn-outline-info text-uppercase ">Ver mais</button>
+            </div>
          </div>
       </div>
    
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 d-flex">
          <div class="card mb-3">
-   
-   
-            <img src="assets/images/p-maracana.jpg" alt="Maracanã">
-            <div class="card-body">
+            <img class="card-img" src="assets/images/curitiba_img.jpg" altr="Teste">
+            <div class="card-img-overlay">
                <div class="text-center">
-                  <h5 class="card-title">Maracanã</h5>
+                  <h5 class="card-body text-2 text-white">Curitiba</h5>
    
-                  <p class="text-info font-weight-bold">Passeio semanal</p>
+                  <p class="text-white text-uppercase font-weight-bold">A partir de</p>
+                  <p class="text-white text-uppercase font-weight-bold text-2">R$ 450</p>
                </div>
-               <p class="card-text text-justify">Construído para abrigar a Copa do Mundo de 1950, vencida pelo Uruguai, o
-                  Maracanã
-                  já foi o maior estádio de futebol do mundo, mas perdeu este status em reforma
-                  recente. Visitá-lo, especialmente em dias de jogos, pode ser algo inesquecível.</p>
+   
             </div>
-            <div class="card-footer text-right">
-               <button class="btn btn-outline-info">Mais Informações..</button>
-               </div>
+            <div class="card-footer text-center">
+               <button class="btn btn-outline-info text-uppercase ">Ver mais</button>
+            </div>
          </div>
       </div>
    
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 d-flex">
          <div class="card mb-3">
-   
-   
-            <img src="assets/images/p-pao-de-acucar.jpg" alt="Maracanã">
-            <div class="card-body">
+            <img class="card-img" src="assets/images/recife-img.jpg" altr="Teste">
+            <div class="card-img-overlay">
                <div class="text-center">
-                  <h5 class="card-title">Pão de açucar</h5>
+                  <h5 class="card-body text-2 text-white">Recife</h5>
    
-                  <p class="text-info font-weight-bold">Passeio diário</p>
+                  <p class="text-white text-uppercase font-weight-bold">A partir de</p>
+                  <p class="text-white text-uppercase font-weight-bold text-2">R$ 450,00</p>
                </div>
-               <p class="card-text text-justify">Localizado no bairro da Urca, o bondinho é uma das principais atrações
-                  turísticas
-                  da cidade. Liga a Praia Vermelha ao morro da Urca e ao morro do Pão de açúcar. O
-                  bondinho foi cenário do filme 007 contra o Foguete da Morte, de 1979.</p>
+   
             </div>
-            <div class="card-footer text-right">
-               <button class="btn btn-outline-info">Mais Informações..</button>
-               </div>
+            <div class="card-footer text-center">
+               <button class="btn btn-outline-info text-uppercase ">Ver mais</button>
+            </div>
          </div>
       </div>
+      <div class="container text-center m-2">
+      <a class="btn btn-outline-info text-uppercase text-info" href="listagem_passagens.html">Ver Todas</a>
+   </div>
    </div>
   
 
-
-   <br>
-<h4 class="mb-3" id="excursoes">Nossas Excursões</h4>
 <div class="accordion" id="id-accordion">
    <div class="card">
-      <div class="card-header" id="id-head-ilha">
+      <h5 class="card-title m-3 text-primary text-uppercase pl-2 text-center">Formas de Pagamento</h5>
+      <div class="card-header text-center" id="id-head-ilha">
          <h5 class="mb-0">
-            <a href="#id-ilha" data-toggle="collapse" aria-expanded="true" aria-controls="id-ilha">Ilha Grande</a>
+            <a href="#id-ilha" data-toggle="collapse" aria-expanded="true" aria-controls="id-ilha">PIX</a>
          </h5>
       </div>
-      <div id="id-ilha" class="collapse show" data-parent="#id-accordion" aria-labelledby="id-head-ilha">
+      <div id="id-ilha" class="collapse" data-parent="#id-accordion" aria-labelledby="id-head-ilha">
          <div class="card-body">
-            <div class="row">
-               <div class="col-lg-6">
+                  <p></p>
                   <div class="media">
                      <div class="media-body">
-                        <img src="assets/images/e-vila-abraao.jpg" alt="Vila do abraão">
-                        <h5>Vila do abraão</h5>
-                        <span class="texto-media-body">É o principal local de chegada à Ilha Grande.
-                           Lá você encontra pousadas, campings, restaurantes, etc.</span>
+                      <div class="alert alert-danger alert-dismissible fade show">
+                              <h4>Nemo enim Ipsam</h4>
+                              <button type="button"
+                                       class="close"
+                                       data-dismiss="alert"
+                                       aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+               
+                              </button>
+                              <p class="mb-2">At vero eos et accusamus et iusto odio dignissimos
+                                 ducimus qui blanditiis praesentium voluptatum deleniti atque
+                                 corrupti quos dolores et quas molestias excepturi sint
+                                 occaecati.</p>
+                        
+                           
                      </div>
                   </div>
                </div>
-               <div class="col-lg-6">
-                  <div class="media">
-                     <div class="media-body">
-                        <img class="img-fluid" src="assets/images/e-lagoa-azul.jpg" alt="Lagoa azul">
-                        <h5>Lagoa azul</h5>
-                        <span class="texto-media-body">Um local muito lindo com água azul turquesa
-                           e muitos peixes. Só é possível chegar lá de barco.</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6">
-                  <div class="media">
-                     <div class="media-body">
-                        <img src="assets/images/e-praia-do-aventureiro.jpg" alt="Praia do aventureiro">
-                        <h5>Praia do aventureiro</h5>
-                        <span class="texto-media-body">Uma das mais bonitas da Ilha Grande.
-                           A praia mede 600 metros e o mar é ótimo para a prática do Surf.</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6">
-                  <div class="media">
-                     <div class="media-body">
-                        <img src="assets/images/e-lopes-mendes.jpg" alt="Lopes Mendes">
-                        <h5>Lopes Mendes</h5>
-                        <span class="texto-media-body">A mais famosa praia da Ilha Grande. São 3 km
-                           de areia muito branca e água cristalina.</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <button class="btn btn-outline-info btn-block">Mais Informações</button>
-            <a class="btn btn-outline-secondary btn-block" href="cadastro.html">Contratar</a>
-         </div>
-      </div>
+
+         
       </div>
    </div>
+</div>
+   </div>
+
+
 
    <div class="accordion" id="id-accordion">
       <div class="card">
-         <div class="card-header" id="id-head-paraty">
+         <div class="card-header text-center" id="id-head-paraty">
             <h5 class="mb-0">
-               <a href="#id-paraty" data-toggle="collapse" aria-expanded="true" aria-controls="idparaty">Paraty</a>
+               <a href="#id-paraty" data-toggle="collapse" aria-expanded="true" aria-controls="idparaty">Crédito</a>
             </h5>
          </div>
          <div id="id-paraty" class="collapse" data-parent="#id-accordion" aria-labelledby="id-head-paraty">
@@ -330,17 +309,6 @@
                   corrupti quos dolores et quas molestias excepturi sint
                   occaecati.</p>
                
-               <a  class="alert-link" href="#">Quaerat voluptatem!</a>
-            
-               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                  quae ab illo inventore veritatis et quasi architecto beatae vitae
-                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                  eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                  qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                  sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                  magnam aliquam quaerat voluptatem.</p>
                </div>
             </div>
          </div>
@@ -349,9 +317,9 @@
 
    <div class="accordion" id="id-accordion">
       <div class="card">
-         <div class="card-header" id="id-head-buzios">
+         <div class="card-header text-center" id="id-head-buzios">
             <h5 class="mb-0">
-               <a href="#id-buzios" data-toggle="collapse" aria-expanded="true" aria-controls="idbuzios">Buzios</a>
+               <a href="#id-buzios" data-toggle="collapse" aria-expanded="true" aria-controls="idbuzios">Débito</a>
             </h5>
          </div>
          <div id="id-buzios" class="collapse" data-parent="#id-accordion" aria-labelledby="id-head-buzios">
@@ -364,50 +332,48 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> 
 
 
+   <br>
 
-
-
-   <div class="jumbotron mb-4">
-   <h4 class="mb-3">Depoimentos sobre Excursões</h4>
+   <div class="jumbotron mb-4" id="ajuda">
+   <h4 class="mb-3 text-center">Dúvidas Frequentes - FAQ</h4>
    <div class="row">
-   <div class="col-lg-6">   
+   <div class="col-lg-6"> 
+      <h1 class="text-2">Como Funciona?</h1>  
    <blockquote>
-   <p class="mb-0">Adipisci veritatis esse expedita odit neque quam! Repellat
+   <p class="mb-0 ml-2 font-weight-lighter">R: Adipisci veritatis esse expedita odit neque quam! Repellat
       quas ad cum porro amet, maiores, dolores in magni ea enim. Commodi
       quidem consequuntur animi pariatur cumque distinctio.</p>
-      <footer class="blockquote-footer">
-   Luis Gustavo Pereira Filho
-   </footer>
+     
 
    </blockquote>
 </div>
    <div class="col-lg-6">   
+      <h1 class="text-2">É seguro comprar na SpaceFly?</h1>  
    <blockquote>
-   <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit
+   <p class="mb-0 ml-2 font-weight-lighter">R: Sed ut perspiciatis unde omnis iste natus error sit
       voluptatem accusantium doloremque laudantium, totam rem aperiam,
       eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-      <footer class="blockquote-footer">
-   Sergio albuquerque
-   </footer>
+   
   
    </blockquote>
 </div>
    <div class="col-lg-6">   
+      <h1 class="text-2">Posso pedir reembolso?</h1>  
    <blockquote>
-   <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+   <p class="mb-0 ml-2 font-weight-lighter">R: Nemo enim ipsam voluptatem quia voluptas sit aspernatur
       aut odit aut fugit, sed quia consequuntur magni dolores eos qui
       ratione voluptatem sequi nesciunt.</p>
-      <footer class="blockquote-footer">
-   Pedro arnaldo Soares
-   </footer>
+  
 
    </blockquote>
 </div>
 </div>
-
+<div class="text-center">
+<a class="btn btn-dark " href="depoimentos.html" >Depoimentos</a>
+</div>
 </div>
 
 </div>
@@ -415,39 +381,40 @@
    <div class="container">
       <div class="row">
          <div class="col-xl-4  col-lg-3 col-sm-7">
-            <h5>Nossas Excursões</h5>
+            <h5>Nossos Pacotes</h5>
             <ul class="list-unstyled">
-               <li><i>Baia da </i><a href='#excursoes'> Ilha Grande</a></li>
-               <li><a href='#excursoes'>Paraty</a></li>
-               <li><a href='#excursoes'>Búzios e arraial do Cabo</a></li>
+               <li><a href='#excursoes'> Resort</a></li>
+               <li><a href='#excursoes'>Aventura</a></li>
+               <li><a href='#excursoes'>Natureza</a></li>
             </ul>
          </div>
          <div class="col-xl-3 col-lg-3 col-sm-7">
-            <h5>Passeios</h5>
+            <h5>Voos Imperdiveis</h5>
             <ul class="list-unstyled">
-               <li><a href='#'>Ciclovias</a></li>
-               <li><a href='#'>Copacabana</a></li>
-               <li><a href='#'>Cristo Redentor</a></li>
-               <li><a href='#'>Pão de Açucar</a></li>
-               <li><a href='#'>Maracanã</a></li>
-               <li><a href='#'>Arcos da Lapa</a></li>
+               <li><a href='#'>Bonito</a></li>
+               <li><a href='#'>Manaus</a></li>
+               <li><a href='#'>São Paulo</a></li>
+               <li><a href='#'>Salvador</a></li>
+               <li><a href='#'>Curitiba</a></li>
+               <li><a href='#'>Recife</a></li>
             </ul>
          </div>
          <div class="col-xl-3 col-lg-3 col-sm-7">
-            <h5>Passeios Culturais</h5>
+            <h5>Formas de Pagamento</h5>
             <ul class="list-unstyled">
-               <li><a href='#'>Museus</a></li>
-               <li><a href='#'>Feiras</a></li>
-               <li><a href='#'>Bibliotecas</a></li>
-               <li><a href='#'>Livrarias</a></li>
+               <li><a href='#'>Pix</a></li>
+               <li><a href='#'>Crédito</a></li>
+               <li><a href='#'>Débito</a></li>
+               
             </ul>
          </div>
          <div class="col-xl-2 col-lg-3 col-sm-7">
             <h5>Contato</h5>
             <ul class="list-unstyled">
-               <li>Joana</li>
-               <li>(99)99999-9999</li>
+               <li>Pedro</li>
+               <li>(21)99999-9999</li>
                <li><a href='mailto:popo@pb.dum.br'>popo@pb.dum.br</a>
+                  
                </li>
             </ul>
          </div>
