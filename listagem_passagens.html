@@ -14,46 +14,90 @@
 <body>
 
 
-    <nav class="navbar navbar-light bg-light navbar-expand-md ">
-        <div class="container">
-           <a class="navbar-brand" href="#">
-              
-            <img src="assets/images/wepik-linear-modern-plane-fly-trip-logo-202310020118316pLd.png" style="width: 100px;"
-            alt="Rio Turismo"></a> 
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
-              aria-expanded="false" aria-label="Botão de navegação">
-              <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="menu">
-              <div class="navbar-nav mr-auto ">
-                 <a class="nav-link nav-item" href="index.html">Passagens Aéreas</a>
-                 <a class="nav-link nav-item" href="pacotes.html">Pacotes</a>
-  
-               
-  
-                 
-                 <a class="nav-link nav-item" href="#header">Contato</a>
-              </div>
-              <div class="navbar-nav">
-                 <a class="nav-link nav-item" href="#ajuda">Ajuda</a>
-                 <a class="nav-link nav-item" href="#pedidos">Meus Pedidos</a>
-                 <a class="nav-link nav-item" href="#janelamodal">
-                    <i class="fa-solid fa-right-to-bracket"></i> Entrar </a>
-              </div>
-           </div>
-        </div>
-     </nav>
+  <nav class="navbar navbar-light bg-light navbar-expand-md ">
+    <div class="container">
+       <a class="navbar-brand" href="index.html">
+          
+          <img src="assets/images/wepik-linear-modern-plane-fly-trip-logo-202310020118316pLd.png" style="width: 100px;"
+             alt="Rio Turismo"></a> 
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+          aria-expanded="false" aria-label="Botão de navegação">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="menu">
+          <div class="navbar-nav mr-auto ">
+             <a class="nav-link nav-item" href="index.html">
+                <i class="fa-solid fa-house"></i> Home</a>
+                <div class="dropdown">
+                   <a class="nav-link nav-item dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-money-bill"></i> Compre
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="listagem_passagens.html">
+                         <i class="fa-solid fa-plane"></i> Passagens Aéreas</a>
+                      <a class="dropdown-item" href="pacotes.html">
+                        <i class="fa-solid fa-plane"></i> Pacotes</a>
+                    
+                   </div>
+                 </div>
+        
 
-     <div class="container mt-3">
-        <div class="text-center bg-light p-2 m-auto">
-        <p class="text-sm font-weight-light mt-auto m-2">Defina o destino:</p>
-        <select class="form-select  mb-5">
-           <option selected>Busque por um lugar:</option>
-           <option value="1">Rio de Janeiro - Santos Dumont (SDU)</option>
-           <option value="2">São Paulo - Congonhas (CGH)</option>
-         </select><br>
-        </div>
-     </div>
+       
+             
+             <a class="nav-link nav-item" href="sobre.html"><i class="fa-solid fa-phone"></i> Quem somos?</a>
+          </div>
+          <div class="navbar-nav">
+             <a class="nav-link nav-item" href="#ajuda"><i class="fa-solid fa-circle-info"></i> Ajuda</a>
+             <a class="nav-link nav-item" href="#pedidos"><i class="fa-solid fa-cart-shopping"></i> Meus Pedidos</a>
+             <a class="nav-link nav-item" href="#janelamodal">
+                <i class="fa-solid fa-right-to-bracket"></i> Entrar </a>
+          </div>
+       </div>
+    </div>
+ </nav>
+
+<div class="container mt-5 mb-5">
+  <div class="row align-items-end">
+    <div class="col-4">
+      <div class="text-center">
+
+        <p class="text-sm font-weight-light  mt-2">Defina a origem:</p>
+        <select class="form-select btn btn-outline-info" , style="width: 300px;">
+          <option selected>Busque por um lugar:</option>
+          <option value="1">Rio de Janeiro - Santos Dumont (SDU)</option>
+          <option value="2">São Paulo - Congonhas (CGH)</option>
+        </select>
+
+      </div>
+    </div>
+    <div class="col-1">
+
+      <span class=""> <i class="fa-solid fa-right-long text-1"></i> </span>
+
+    </div>
+    <div class="col-3">
+      <div class="text-center">
+
+        <p class="text-sm font-weight-light  mt-2">Defina o destino:</p>
+        <select class="form-select btn btn-outline-info" , style="width: 300px;">
+          <option selected>Busque por um lugar:</option>
+          <option value="1">Rio de Janeiro - Santos Dumont (SDU)</option>
+          <option value="2">São Paulo - Congonhas (CGH)</option>
+        </select>
+
+      </div>
+    </div>
+
+    <div class="col-1">
+
+      <button class="btn btn-info btn-md ml-5">Procurar</button>
+      
+    </div>
+  </div>
+
+
+</div>
+</div>
 
 
      <div class="container">
@@ -164,6 +208,78 @@
           </tr>
         </tbody>
       </table>
+      
+      <!--Paginação-->
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+
+      
     
      </div>
+     <div class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-4  col-lg-3 col-sm-7">
+               <h5>Nossos Pacotes</h5>
+               <ul class="list-unstyled">
+                  <li><a href='#excursoes'> Resort</a></li>
+                  <li><a href='#excursoes'>Aventura</a></li>
+                  <li><a href='#excursoes'>Natureza</a></li>
+               </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-7">
+               <h5>Lugares para conhecer</h5>
+               <ul class="list-unstyled">
+                  <li><a href='#'>Bonito</a></li>
+                  <li><a href='#'>Manaus</a></li>
+                  <li><a href='#'>São Paulo</a></li>
+                  <li><a href='#'>Salvador</a></li>
+                  <li><a href='#'>Curitiba</a></li>
+                  <li><a href='#'>Recife</a></li>
+               </ul>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-sm-7">
+               <h5>Formas de Pagamento</h5>
+               <ul class="list-unstyled">
+                  <li><a href='#'>Pix</a></li>
+                  <li><a href='#'>Crédito</a></li>
+                  <li><a href='#'>Débito</a></li>
+                  
+               </ul>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-sm-7">
+               <h5><i class="fa-solid fa-circle-info"></i> Contato</h5>
+               <ul class="list-unstyled">
+            
+                  <li><a href="teste.html"><i class="fa-solid fa-phone"></i> (21) 99999-9999</a></li>
+                  <li> <a href='mailto:popo@pb.dum.br'><i class="fa-solid fa-envelope"></i> popo@pb.dum.br</a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i> @flytrip</a></li>
+                     
+                  
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
 </body>
+</html>
