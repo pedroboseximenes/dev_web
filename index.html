@@ -34,7 +34,7 @@
                         <a class="dropdown-item" href="listagem_passagens.html">
                            <i class="fa-solid fa-plane"></i> Passagens Aéreas</a>
                         <a class="dropdown-item" href="pacotes.html">
-                           <i class="fa-solid fa-boxes-packing"></i> Pacotes</a>
+                           <i class="fa-solid fa-box-open"></i> Pacotes</a>
                       
                      </div>
                    </div>
@@ -47,7 +47,7 @@
             <div class="navbar-nav">
                <a class="nav-link nav-item" href="#ajuda"><i class="fa-solid fa-circle-info"></i> Ajuda</a>
                <a class="nav-link nav-item" href="#pedidos"><i class="fa-solid fa-cart-shopping"></i> Meus Pedidos</a>
-               <a class="nav-link nav-item" href="#janelamodal">
+               <a class="nav-link nav-item" href="login.html">
                   <i class="fa-solid fa-right-to-bracket"></i> Entrar </a>
             </div>
          </div>
@@ -116,19 +116,47 @@
    <br>
 
    <!--Colocar Saida e destino-->
-   <div class="container  mb-3">
-      <div class="text-center bg-light p-2 m-auto">
-      <p class="text-sm font-weight-lighter mt-auto m-2">De onde você está saindo ?</p>
-      <select class="form-select custom-select-lg mb-5" style="width: 500px;">
-         <option selected>Busque por aeroporto:</option>
-         <option value="1">Rio de Janeiro - Santos Dumont (SDU)</option>
-         <option value="2">São Paulo - Congonhas (CGH)</option>
-       </select><br>
-       <a class="btn btn-info text-uppercase btn-md" href="listagem_passagens.html">Buscar VOO</a>
-      </div>
-      
+   <div class="container mt-5 mb-5">
+      <div class="row align-items-end">
+        <div class="col-lg-4">
+          <div class="text-center">
     
-   </div>
+            <p class="text-sm font-weight-light  mt-2">Defina a origem:</p>
+            <select class="form-select btn btn-outline-info" , style="width: 300px;">
+              <option selected>Busque por um lugar:</option>
+              <option value="1">Rio de Janeiro - Santos Dumont (SDU)</option>
+              <option value="2">São Paulo - Congonhas (CGH)</option>
+            </select>
+    
+          </div>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block">
+    
+          <span class=""> <i class="fa-solid fa-right-long text-1" style="transform: scale(1.0);"></i> </span>
+    
+        </div>
+        <div class="col-lg-3">
+          <div class="text-center">
+    
+            <p class="text-sm font-weight-light  mt-2">Defina o destino:</p>
+            <select class="form-select btn btn-outline-info" , style="width: 300px;">
+              <option selected>Busque por um lugar:</option>
+              <option value="1">Rio de Janeiro - Santos Dumont (SDU)</option>
+              <option value="2">São Paulo - Congonhas (CGH)</option>
+            </select>
+    
+          </div>
+        </div>
+    
+        <div class="col-1 ">
+    
+          <button class="btn btn-info btn-md ml-5">Procurar</button>
+          
+        </div>
+      </div>
+    
+    
+    </div>
 
    <h4 id="passagens" class="mb-3">Nossos Voos</h4>
    <div class="row mb-4">
@@ -156,7 +184,7 @@
    
       <div class="col-lg-4 col-md-6 d-flex">
          <div class="card mb-4">
-            <img class="card-img" src="assets/images/manaus_img.jpg" altr="Teste">
+            <img class="card-img h-100" src="assets/images/manaus_img.jpg" altr="Teste">
             <div class="card-img-overlay">
                <div class="text-center">
                   <h5 class="card-body text-2 text-white">Manaus</h5>

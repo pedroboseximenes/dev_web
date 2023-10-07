@@ -33,7 +33,8 @@
                         <a class="dropdown-item" href="listagem_passagens.html">
                            <i class="fa-solid fa-plane"></i> Passagens Aéreas</a>
                         <a class="dropdown-item" href="pacotes.html">
-                           <i class="fa-solid fa-boxes-packing"></i> Pacotes</a>
+                           <i class="fa-solid fa-box-open"></i> Pacotes</a>
+
                       
                      </div>
                    </div>
@@ -46,7 +47,7 @@
             <div class="navbar-nav">
                <a class="nav-link nav-item" href="#ajuda"><i class="fa-solid fa-circle-info"></i> Ajuda</a>
                <a class="nav-link nav-item" href="#pedidos">Meus Pedidos</a>
-               <a class="nav-link nav-item" href="#janelamodal">
+               <a class="nav-link nav-item" href="login.html">
                   <i class="fa-solid fa-right-to-bracket"></i> Entrar </a>
             </div>
          </div>
@@ -60,7 +61,7 @@
      <div class="row mb-4">
         <div class="col-lg-4 col-md-6">
            <div class="card mb-3">
-              <img src="assets/images/porto_de_galinha_img.jpg" alt="Ciclovias">
+              <img src="assets/images/porto_de_galinha_img.jpg" alt="Porto de galinha">
               <div class="card-body">
                  <div class="text-center">
                     <h5 class="card-title">Resort Porto de Galinha</h5>
@@ -72,14 +73,15 @@
                  </p>
               </div>
               <div class="card-footer text-right">
-                 <button class="btn btn-outline-info">Mais Informações..</button>
+               <button type="button" class="btn btn-sm btn-outline-info" data-toggle="popover" data-trigger="focus" title="Mais informações" data-content="Resort fica de frente para praia Maragiba, uma da melhores praias da região">Mais informações</button>
+
                  </div>
            </div>
         </div>
      
         <div class="col-lg-4 col-md-6">
            <div class="card mb-3">
-              <img src="assets/images/pantanal_img.jpg" alt="Copacabana">
+              <img src="assets/images/pantanal_img.jpg" alt="Pantanal">
               <div class="card-body">
                  <div class="text-center">
                     <h5 class="card-title">Aventurando no Pantanal</h5>
@@ -90,7 +92,8 @@
                  </p>
               </div>
               <div class="card-footer text-right">
-                 <button class="btn btn-outline-info">Mais Informações..</button>
+               <button type="button" class="btn btn-sm btn-outline-info" data-trigger="focus" data-toggle="popover" title="Mais informações" data-content="Pantanal é conhecido por existir uma das melhores florestas do mundo!">Mais informações</button>
+
                  </div>
            </div>
      
@@ -100,7 +103,7 @@
            <div class="card mb-3">
      
      
-              <img src="assets/images/jalapao_img.jpg" alt="Cristo Redentor">
+              <img src="assets/images/jalapao_img.jpg" alt="Jalapao">
               <div class="card-body">
                  <div class="text-center">
                     <h5 class="card-title">Explorando Jalapão</h5>
@@ -112,7 +115,8 @@
                     magnifíca da cidade.</p>
               </div>
               <div class="card-footer text-right">
-                 <button class="btn btn-outline-info">Mais Informações..</button>
+               <button type="button" class="btn btn-sm btn-outline-info" data-toggle="popover" title="Mais informações" data-content="Uma das melhores viagens da sua vida!">Mais informações</button>
+
                  </div>
            </div>
         </div>
@@ -172,5 +176,10 @@
    <script src="assets/js/popper.js"></script>
    <script src="assets/js/bootstrap.js"></script>
    <script src="assets/js/script.js"></script>
+   <script>let popovers = document.querySelectorAll('[data-toggle="popover"]')
+   for(let i of popovers){
+      new bootstrap.Popover(i); 
+   }
+   </script>
 </body>
 </html>

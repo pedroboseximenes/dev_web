@@ -66,3 +66,7 @@
     font-size: 25px;
 }
 }
+
+a:hover i { transform: scale(1.35);}
+ i:hover { transform: scale(2.35); }
+
