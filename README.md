@@ -6,32 +6,32 @@
   - Segue algumas imagens do projeto:
 <div align="center">
      Tela Inicial:
-    <img title="Tela Inicial" src="img/telaInicial.png"/>
+    <img title="Tela Inicial" src="Paginas_Estatica_HTML/img/telaInicial.png"/>
 <div>
 <div align="center">
      Detalhes Passagem: 
-    <img title="Detalhes Passagem" src="img/DetalhesPassagem.png"/>
+    <img title="Detalhes Passagem" src="Paginas_Estatica_HTML/img/DetalhesPassagem.png"/>
 <div>
 <div align="center">
      Detalhes Passagem: 
-    <img title="Detalhes Passagem" src="img/DetalhesPassagem.png"/>
+    <img title="Detalhes Passagem" src="Paginas_Estatica_HTML/img/DetalhesPassagem.png"/>
 <div>
 
 <div align="center">
      Listagem com cadastro/alteração: 
-    <img title="Listagem" src="img/Listagem2.png"/>
+    <img title="Listagem" src="Paginas_Estatica_HTML/img/Listagem2.png"/>
 <div>
 
 <div align="center">
      Listagem com busca: 
-    <img title="Listagem com busca" src="img/Listagem.png"/>
+    <img title="Listagem com busca" src="Paginas_Estatica_HTML/img/Listagem.png"/>
 <div>
 <div align="center">
      Tela Login: 
-    <img title="Tela login" src="img/Login.png"/>
+    <img title="Tela login" src="Paginas_Estatica_HTML/img/Login.png"/>
 <div>
 
 <div align="center">
      Carrinho integrado com back: 
-    <img title="Carrinho" src="img/Carrinho.png"/>
+    <img title="Carrinho" src="Paginas_Estatica_HTML/img/Carrinho.png"/>
 <div>
